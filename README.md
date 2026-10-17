@@ -70,11 +70,14 @@ O projeto segue uma convenção de GitFlow simplificado e seguro para evolução
    ```bash
    git c./mvnw spring-boot:runlone [https://github.com/Rafael-TOZATO/lab-padroes-projeto-spring.git](https://github.com/Rafael-TOZATO/lab-padroes-projeto-spring.git)
 
+2. **Navegar até a pasta do projeto:**
 cd lab-padroes-projeto-spring
 
+3. **Executar com o Maven Wrapper:**
 ./mvnw spring-boot:run
 
-Acessar a API:
+
+4. **Acessar a API:**
 A aplicação estará rodando em http://localhost:8080
 
 ---
