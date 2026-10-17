@@ -1,10 +1,72 @@
-# Explorando Padrões de Projetos na Prática com Java
+<div align="center">
 
-Repositório com as implementações dos padrões de projeto explorados no Lab "Explorando Padrões de Projetos na Prática com Java". Especificamente, este projeto explorou alguns padrões usando o Spring Framework, são eles:
-- Singleton
-- Strategy/Repository
-- Facade
+# ☕ Explorando Padrões de Projeto na Prática com Java & Spring Boot
 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Build](https://img.shields.io/badge/Build-Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
+
+[![Security Scan](https://img.shields.io/badge/CodeQL-Passed-brightgreen?style=flat-square&logo=githubactions)](https://github.com/Rafael-TOZATO/lab-padroes-projeto-spring)
+[![Code Quality](https://img.shields.io/badge/Code_Quality-A%2B-blueviolet?style=flat-square&logo=sonarcloud)](https://github.com/Rafael-TOZATO/lab-padroes-projeto-spring)
+[![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/Rafael-TOZATO)
+
+</div>
+
+---
+
+## 📌 Sobre o Projeto
+
+Este repositório contém a implementação prática de **Padrões de Projeto (Design Patterns)** consagrados pela **GoF (Gang of Four)**, abstraídos e otimizados com o ecossistema do **Spring Framework / Spring Boot**.
+
+O objetivo deste laboratório é demonstrar como substituir acoplamentos rígidos e estruturas verbosas por soluções elegantes, modularizadas e mantidas via Injeção de Dependência e Inversão de Controle (IoC/DI).
+
+---
+
+## 🏗️ Padrões de Projeto Implementados
+
+| Padrão | Categoria | Descrição / Aplicação |
+| :--- | :--- | :--- |
+| 🧩 **Singleton** | Criacional | Permite a criação de instâncias únicas gerenciadas diretamente pelo container do Spring (beans gerenciados pelo `@Component` / `@Service`). |
+| 🎯 **Strategy** | Comportamental | Simplifica variações de algoritmos e regras de negócio definindo interfaces coesas (`Repository`, `Service` interfaces). |
+| 🏛️ **Facade** | Estrutural | Prove uma interface unificada para um conjunto de interfaces num subsistema, encapsulando chamadas externas complexas (ex: integração com OpenFeign / ViaCEP). |
+
+---
+
+## 🛠️ Tecno-Stack e Ferramentas
+
+- **Linguagem:** Java 17+ / OpenJDK[cite: 6, 7]
+- **Framework Principal:** Spring Boot 3.x / Spring Data JPA / OpenFeign
+- **Gerenciador de Dependências:** Apache Maven[cite: 7]
+- **Banco de Dados (In-Memory):** H2 Database
+- **Estilo Arquitetural:** REST API / MVC Layered Architecture
+
+---
+
+## 🔒 Selos de Qualidade e Segurança
+
+- **Injeção de Dependência Segura:** Utilização preferencial de construtores imutáveis em vez de `@Autowired` em campos.
+- **Análise Estática:** Projeto compatível com validações CodeQL e SonarCloud.
+- **Gerenciamento de Segredos:** Sem credenciais hardcoded nos arquivos de configuração (`application.properties`).
+
+---
+
+## 🌿 Estrutura de Branches e Workflow (Git)
+
+O projeto segue uma convenção de GitFlow simplificado e seguro para evolução contínua:
+
+- **`main`:** Branch estável e em produção com código testado e aprovado[cite: 7].
+- **`develop`:** Branch principal de integração técnica para novas funcionalidades.
+- **`feature/nome-da-feature`:** Branches secundárias para implementação isolada de novos padrões e endpoints.
+- **`fix/descricao-do-bug`:** Branches de correção pontual.
+
+---
+
+## 🚀 Como Executar o Projeto Localmente
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone [https://github.com/Rafael-TOZATO/lab-padroes-projeto-spring.git](https://github.com/Rafael-TOZATO/lab-padroes-projeto-spring.git)
 ---
 
 ## 📬 Contatos
